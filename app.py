@@ -30,6 +30,7 @@ def strict_avalanche_criterion(sbox):
 
     return total_flips / total_bits
 
+# ----------------------- Non Linearity Test ----------------------- #
 def hamming_distance(fx, gx):
     return sum(f != g for f, g in zip(fx, gx))
 
@@ -66,6 +67,10 @@ def sbox_to_binary_table(sbox):
         table.append([int(bit) for bit in f"{value:08b}"])
     return np.array(table)
 
+# ----------------------- Non Linearity Test ----------------------- #
+
+
+
 # Fungsi Ekspor Data ke Excel
 def export_to_excel(data, filename):
     output = BytesIO()
@@ -94,10 +99,10 @@ elif data_input_method == "Upload File (Excel)":
     uploaded_file = st.file_uploader("Upload file Excel berisi S-Box:", type=["xlsx"])
     if uploaded_file:
         try:
-            df = pd.read_excel(uploaded_file)
+            df = pd.read_excel(uploaded_file, header=None)
             st.write("Data S-Box yang diimport:")
             st.dataframe(df)
-            sbox_input = ",".join(map(str, df.iloc[:, 0].tolist()))
+            sbox_input = ",".join(map(str, df.to_numpy().flatten()))
         except Exception as e:
             st.error(f"Terjadi kesalahan dalam membaca file: {str(e)}")
 
