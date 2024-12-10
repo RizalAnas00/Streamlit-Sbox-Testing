@@ -21,7 +21,7 @@ S-Box AES Example as an input : <br><br>
 
 ID-Bahasa Indonesia :
 dokumentasi setup dan instalasi streamlit lengkapnya ada disini: https://docs.streamlit.io/get-started/installation/command-line
-TL;DR :
+<br>TL;DR :<br>
 
 ## 1. Pergi ke folder yang ingin digunakan untuk clone repo github ini
 ## 2. Buka terminal/cmd dengan direktori folder tsb
@@ -33,13 +33,16 @@ TL;DR :
 ## 4. Aktivasi environment yang sudah ada dengan command berikut :
    *disarankan menggunakan cmd/command prompt bagi windows karena untuk terminal biasanya terkena restriction sistem, walaupun ada caranya, namun lebih baik dilewati dengan menggunakan cmd saja*
    
-    _Windows command prompt_
+    Windows command prompt
+    
     .venv\Scripts\activate.bat
     
-    _Windows PowerShell_
+    Windows PowerShell
+    
     .venv\Scripts\Activate.ps1
     
-    _macOS and Linux_
+    macOS and Linux
+    
     source .venv/bin/activate
 
 ## 6. Clone repo di folder yang sama
