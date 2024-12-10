@@ -1,7 +1,7 @@
 # Streamlit-Sbox-Testing
 Streamlit-Sbox-Testing is a Streamlit-based application for analyzing S-Boxes in cryptography. It provides tests for Non-Linearity (NL), Strict Avalanche Criterion (SAC), Bit Independence Criterion-Nonlinearity (BIC-NL), Bit Independence Criterion-Strict Avalanche Criterion (BIC-SAC), Linear Approximation Probability (LAP), and Differential Approximation Probability (DAP).
 
-S-Box AES Example as an input : 
+S-Box AES Example as an input : <br>
     99, 205, 85, 71, 25, 127, 113, 219, 63, 244, 109, 159, 11, 228, 94, 214,
     77, 177, 201, 78, 5, 48, 29, 30, 87, 96, 193, 80, 156, 200, 216, 86,
     116, 143, 10, 14, 54, 169, 148, 68, 49, 75, 171, 157, 92, 114, 188, 194,
@@ -17,7 +17,7 @@ S-Box AES Example as an input :
     229, 195, 138, 18, 93, 207, 240, 95, 58, 255, 209, 217, 15, 111, 46, 173,
     223, 42, 115, 238, 139, 243, 23, 98, 100, 178, 37, 97, 191, 213, 222, 155,
     165, 2, 146, 204, 120, 241, 163, 128, 22, 90, 60, 185, 67, 34, 27, 248,
-    164, 69, 41, 230, 104, 47, 144, 251, 20, 17, 150, 225, 254, 161, 102, 70
+    164, 69, 41, 230, 104, 47, 144, 251, 20, 17, 150, 225, 254, 161, 102, 70 <br>
 
 dokumentasi setup dan instalasi streamlit lengkapnya ada disini: https://docs.streamlit.io/get-started/installation/command-line
 TL;DR :
