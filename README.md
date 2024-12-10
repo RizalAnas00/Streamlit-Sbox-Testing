@@ -21,32 +21,32 @@ S-Box AES Example as an input :
 
 dokumentasi setup dan instalasi streamlit lengkapnya ada disini: https://docs.streamlit.io/get-started/installation/command-line
 TL;DR :
-1. Pergi ke folder yang ingin digunakan untuk clone repo github ini
-2. Buka terminal/cmd dengan direktori folder tsb
-3. Buat environment dengan command :
-   
+# 1. Pergi ke folder yang ingin digunakan untuk clone repo github ini
+# 2. Buka terminal/cmd dengan direktori folder tsb
+# 3. Buat environment dengan command :
+   folder .venv akan terinstall di folder tsb.
+
     python -m venv .venv
 
-    folder .venv akan terinstall di folder tsb.
-
-4. Aktivasi environment yang sudah ada dengan command berikut :
+# 4. Aktivasi environment yang sudah ada dengan command berikut :
    *disarankan menggunakan cmd/command prompt bagi windows karena untuk terminal biasanya terkena restriction sistem, walaupun ada caranya, namun lebih baik dilewati dengan menggunakan cmd saja*
-    # Windows command prompt
+   
+    _Windows command prompt_
     .venv\Scripts\activate.bat
     
-    # Windows PowerShell
+    _Windows PowerShell_
     .venv\Scripts\Activate.ps1
     
-    # macOS and Linux
+    _macOS and Linux_
     source .venv/bin/activate
 
-6. Clone repo di folder yang sama
-7. Arahkan termimal/cmd ke folder yang sama dengan environment
-8. Install streamlit :
+# 6. Clone repo di folder yang sama
+# 7. Arahkan termimal/cmd ke folder yang sama dengan environment
+# 8. Install streamlit :
    
     pip install streamlit
 
-9. Running Server / Jalankan script utama program :
+# 9. Running Server / Jalankan script utama program :
 
     streamlit run app.py
 
@@ -54,8 +54,8 @@ TL;DR :
 
     python -m streamlit run app.py
 
-10. Otomatis diarahkan ke web localhost
-11. Untuk mematikan server, tekan CTRL + C dan untuk kembali ke terminal/cmd normal, ketik :
+# 10. Otomatis diarahkan ke web localhost
+# 11. Untuk mematikan server, tekan CTRL + C dan untuk kembali ke terminal/cmd normal, ketik :
 
     deactivate
 
