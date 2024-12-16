@@ -66,9 +66,14 @@ with col2:
                         result_df = pd.DataFrame({"Output Bit": list(range(8)), "NL Values": formatted_nl_values})
 
                     elif test_type == "Strict Avalanche Criterion (SAC)":
-                        sac_value = strict_avalanche_criterion(sbox)
+                        sac_value, sac_matrix  = strict_avalanche_criterion(sbox)                   
                         st.success(f"Strict Avalanche Criterion (SAC): *{sac_value:.{precision}f}*")
-                        result_df = pd.DataFrame({"Metric": ["SAC"], "Value": [f"{sac_value:.{precision}f}"]})
+
+                        # Menampilkan matriks SAC 8x8
+                        sac_value_str = "\n".join(
+                            [" ".join(f"{value:.{precision}f}" for value in row) for row in sac_matrix]
+                        )
+                        result_df = pd.DataFrame(sac_matrix)
 
                     elif test_type == "BIC-NL":
                         nl_value = calc_bic_nl(sbox)
@@ -76,9 +81,15 @@ with col2:
                         result_df = pd.DataFrame({"Metric": ["BIC-NL"], "Value": [f"{nl_value:.{precision}f}"]})
 
                     elif test_type == "BIC-SAC":
-                        sac_value = calculate_bic_sac(sbox)
-                        st.success(f"BIC-SAC: *{sac_value:.{precision}f}*")
-                        result_df = pd.DataFrame({"Metric": ["BIC-SAC"], "Value": [f"{sac_value:.{precision}f}"]})
+                        bic_sac_value, bic_sac_matrix  = calculate_bic_sac(sbox)  # Menghitung nilai BIC-SAC
+                        
+                        st.success(f"BIC-SAC: *{bic_sac_value:.{precision}f}*")
+
+                        bic_sac_str = "\n".join(
+                            [" ".join(f"{value:.{precision}f}" for value in row) for row in bic_sac_matrix]
+                        )
+
+                        result_df = pd.DataFrame(bic_sac_matrix)
 
                     elif test_type == "Linear Approximation Probability (LAP)":
                         lap_value = calculate_lap(sbox)
