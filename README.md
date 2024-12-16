@@ -1,7 +1,7 @@
 # Streamlit-Sbox-Testing
 Streamlit-Sbox-Testing is a Streamlit-based application for analyzing S-Boxes in cryptography. It provides tests for Non-Linearity (NL), Strict Avalanche Criterion (SAC), Bit Independence Criterion-Nonlinearity (BIC-NL), Bit Independence Criterion-Strict Avalanche Criterion (BIC-SAC), Linear Approximation Probability (LAP), and Differential Approximation Probability (DAP).
 
-S-Box AES Example as an input : 
+S-Box AES Example as an input : <br><br>
     99, 205, 85, 71, 25, 127, 113, 219, 63, 244, 109, 159, 11, 228, 94, 214,
     77, 177, 201, 78, 5, 48, 29, 30, 87, 96, 193, 80, 156, 200, 216, 86,
     116, 143, 10, 14, 54, 169, 148, 68, 49, 75, 171, 157, 92, 114, 188, 194,
@@ -17,4 +17,51 @@ S-Box AES Example as an input :
     229, 195, 138, 18, 93, 207, 240, 95, 58, 255, 209, 217, 15, 111, 46, 173,
     223, 42, 115, 238, 139, 243, 23, 98, 100, 178, 37, 97, 191, 213, 222, 155,
     165, 2, 146, 204, 120, 241, 163, 128, 22, 90, 60, 185, 67, 34, 27, 248,
-    164, 69, 41, 230, 104, 47, 144, 251, 20, 17, 150, 225, 254, 161, 102, 70
+    164, 69, 41, 230, 104, 47, 144, 251, 20, 17, 150, 225, 254, 161, 102, 70 <br><br>
+
+ID-Bahasa Indonesia :
+dokumentasi setup dan instalasi streamlit lengkapnya ada disini: https://docs.streamlit.io/get-started/installation/command-line
+<br>TL;DR :<br>
+
+## 1. Pergi ke folder yang ingin digunakan untuk clone repo github ini
+## 2. Buka terminal/cmd dengan direktori folder tsb
+## 3. Buat environment dengan command :
+   folder .venv akan terinstall di folder tsb.
+
+    python -m venv .venv
+
+## 4. Aktivasi environment yang sudah ada dengan command berikut :
+   *disarankan menggunakan cmd/command prompt bagi windows karena untuk terminal biasanya terkena restriction sistem, walaupun ada caranya, namun lebih baik dilewati dengan menggunakan cmd saja*
+   
+    Windows command prompt
+    
+    .venv\Scripts\activate.bat
+    
+    Windows PowerShell
+    
+    .venv\Scripts\Activate.ps1
+    
+    macOS and Linux
+    
+    source .venv/bin/activate
+
+## 6. Clone repo di folder yang sama
+## 7. Arahkan termimal/cmd ke folder yang sama dengan environment
+## 8. Install streamlit :
+   
+    pip install streamlit
+
+## 9. Running Server / Jalankan script utama program :
+
+    streamlit run app.py
+
+    atau jika tidak berhasil, maka coba ini :
+
+    python -m streamlit run app.py
+
+## 10. Otomatis diarahkan ke web localhost
+## 11. Untuk mematikan server, tekan CTRL + C dan untuk kembali ke terminal/cmd normal, ketik :
+
+    deactivate
+
+*Setiap kali menjalankan server selalu mengaktifkan environment terlebih dahulu*
