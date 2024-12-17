@@ -36,7 +36,6 @@ with col1:
                 st.error(f"Terjadi kesalahan: {str(e)}")
 
     # Pilih jenis pengujian
-    st.write("Note: Belum semua tersedia untuk semua jenis pengujian.")
     precision = st.slider("Pilih keakuratan (jumlah angka di belakang desimal):", min_value=1, max_value=10, value=5)
     test_type = st.radio("Pilih jenis pengujian:", ["Non-Linearity (NL)", 
                                                     "Strict Avalanche Criterion (SAC)",
